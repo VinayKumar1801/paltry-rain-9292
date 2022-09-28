@@ -1,0 +1,153 @@
+.topsection{
+    display: grid;
+    width: 80%;
+
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 150px;
+
+    /* border: 2px solid red; */
+}
+.topsection img{
+    width: 120%; 
+    /* border: 2px solid red; */
+}
+
+.heading1{
+    font-size: 44px;
+    line-height: 57px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    color: #4C525A;
+}
+
+.heading2{
+    color: #4C525A;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    width: 460px;
+
+}
+.midheading{
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #4C525A;
+    height: 45px;
+    margin-top: 50px;
+}
+.midpara{
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    width: 640px;
+    height: 62px;
+    align-self: center;
+    margin: auto;
+}
+
+.midimgbox{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    gap: 30px;
+}
+
+.midimgbox img{
+    width: 100%;
+    padding: 20px;
+
+}
+
+.midsection{
+    width: 70%;
+    margin: auto;
+}
+
+.lowersection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+}
+.lowersection div{
+    /* border: 2px solid green; */padding: 10px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    /* gap: 16rem; */
+}
+.footer>div{
+    /* border: 2px solid green; */
+    padding: 5px;
+}
+.footer h2{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #4C4D5F;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.footer p{
+    font-weight: 300;
+    line-height: 30px;
+    color: #0D0D14;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+.lastbtn{
+    display: flex;
+    width: 80%;
+    gap: 13rem;
+    margin: 50px 0px;
+    border: 20x solid red;
+    margin: auto;
+    background-color: rgb(226, 243, 243);
+    padding: 50px;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.product,.free,.bon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lastbtn p{
+    font-size: 44px;
+    line-height: 58px;
+    width: 580px;
+    color: #4C525A;
+    font-family: sans-serif;
+}
+ .lastbtn:last-child {
+    display: flex;
+    align-items: center;
+    border: 20px solid red;
+    justify-content: center;
+ }
