@@ -59,7 +59,7 @@ const LoginForm = () => {
           alert("Invalid Details")
         }else{
           console.log("done")
-          localStorage.setItem("user_login",JSON.stringify(getuserArr))
+          localStorage.setItem("user_login",JSON.stringify(...userLogin))
           history("/dashboard")
         }
       }
