@@ -119,8 +119,8 @@
 }
 .lastbtn{
     display: flex;
-    width: 80%;
-    gap: 13rem;
+    width: 70%;
+    gap: 7rem;
     margin: 50px 0px;
     border: 20x solid red;
     margin: auto;
@@ -150,4 +150,48 @@
     align-items: center;
     border: 20px solid red;
     justify-content: center;
+ }
+
+ /* .signup{
+    display: grid;
+    grid-template-columns: 25% 37% 37%;
+    grid-template-rows: 30% 70%;
+    gap: 1;
+    justify-content: space-between;
+    align-content: center;
+
+    width: 60%;
+    margin: auto;
+    border: 2px solid red;
+
+ } */
+ .formheading{
+    /* fontSize={22} fontWeight={600} w={300} m={10} */
+    font-size: 22px;
+    font-weight: 600;
+    width: 300px;
+    /* margin: 10px; */
+ }
+
+ .formlabel{
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    line-height: 12px;
+    color: #878787;
+    height: 12px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .formlabel1{
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    line-height: 12px;
+    color: #878787;
+    height: 12px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .listitem{
+    display: flex;
+    border: 2px solid black;
  }
