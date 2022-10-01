@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Box,
   Button,
@@ -24,10 +24,25 @@ import DateGreet from "../Components/Date";
 import TaskAdd from "../Components/TaskAdd";
 import Belowhead from "../Components/Belowhead";
 import Income from "../Components/Income";
-const Dashboard = () => {
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-const userDetails = JSON.parse(localStorage.getItem("user_login"))
-console.log(userDetails.name)
+
+const Dashboard = () => {
+  const [userDetail,setuserDetail]= useState("")
+const history= useNavigate();
+
+useEffect(()=>{
+  const userDetails = JSON.parse(localStorage.getItem("user_login"))
+ setuserDetail(userDetails.name)
+
+},[])
+const userLogout=()=>{
+  localStorage.removeItem("user_login")
+ history("/")
+  
+}
 
   return (
     <>
@@ -45,7 +60,7 @@ console.log(userDetails.name)
           <Menu>
             <Flex justifyContent={"right"} gap={3} direction={"row-reverse"}>
               <MenuButton as={Button} bg="#00B289" color={"white"}>
-             { userDetails.name } <ChevronDownIcon />
+             { userDetail } <ChevronDownIcon />
               </MenuButton>
              
               <Button as={Button} bg="#00B289" color={"white"}>
@@ -64,7 +79,7 @@ console.log(userDetails.name)
                 <MenuItem>Apps & Integrations</MenuItem>
                 <MenuItem>Payments</MenuItem>
                 <MenuItem>Settings</MenuItem>
-                <MenuItem>Logout</MenuItem>
+                <MenuItem onClick={userLogout} >Logout</MenuItem>
               </MenuGroup>
             </MenuList>
           </Menu>

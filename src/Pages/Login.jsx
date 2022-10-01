@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, Spacer,Box, Heading, ButtonGroup, Button,Image, Divider } from '@chakra-ui/react'
 import Belowhead from '../Components/Belowhead'
 import LoginForm from '../Components/LoginForm'
-
+import { Link } from 'react-router-dom'
 const Login = () => {
   return (
    <>
@@ -12,8 +12,14 @@ const Login = () => {
   </Box>
   <Spacer />
   <ButtonGroup gap='2'>
+    <Link to="/login">
     <Button color={"#AAAAAA"} bg={"white"}>Login</Button>
+    
+    </Link>
+    <Link to="/signup">
     <Button color={"#AAAAAA"} bg={"white"}>Sign up</Button>
+    
+    </Link>
   </ButtonGroup>
 </Flex>
   <Divider/>

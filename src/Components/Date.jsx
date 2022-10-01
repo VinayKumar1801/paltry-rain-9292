@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const getData= JSON.parse(localStorage.getItem("user_login"))
 
@@ -24,15 +24,17 @@ else{
 
 
 const DateGreet = () => {
-
-
+const [user,setUser] = useState("");
+useEffect(()=>{
+setUser(getData.name)
+},[])
 
   return (
     <div>
     <div style={{display:"flex",alignItems:"center",gap:"20px",marginBottom:"50px"}}>
         <img src="https://app.hellobonsai.com/packs/static/good-afternoon-b0990cefb6300b05f216.svg" alt="" />
        <p style={{fontSize:"28px",fontWeight:"700"}}>
-         {greeting} , {getData.name.toUpperCase()} !
+         {greeting} , {user.toUpperCase()} !
         
         </p>
         <span  style={{fontSize:"20px",fontWeight:"300"}}>{currDate}  </span> 
