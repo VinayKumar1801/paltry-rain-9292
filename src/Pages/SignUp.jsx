@@ -3,7 +3,7 @@ import { Grid, GridItem,Container, Box, Button, Divider,Text } from '@chakra-ui/
 import "../Styles/TopSection.css"
 import SignForm from '../Components/SignForm'
 import Belowhead from '../Components/Belowhead'
-
+import { Link } from 'react-router-dom'
 const SignUp = () => {
   return (
 <>

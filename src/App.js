@@ -4,6 +4,7 @@ import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
 import {Routes,Route} from "react-router-dom";
 import Dashboard from './Pages/Dashboard';
+import PageNotFound from './Pages/PageNotFound';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/signup" element={<SignUp/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/dashboard" element={<Dashboard/>}></Route>
+      <Route path="*" element={<PageNotFound/>}></Route>
     </Routes>
     </>
   );

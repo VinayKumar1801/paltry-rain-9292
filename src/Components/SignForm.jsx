@@ -6,7 +6,11 @@ import {
   FormLabel,
   Input,
   Select,
-  Text,
+  Text,  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+  Stack
 } from "@chakra-ui/react";
 import React from "react";
 import { useState } from "react";
@@ -46,6 +50,17 @@ const SignForm = () => {
     const { email, name, password, country, currency } = inpval;
     if (email === "") {
       alert("EMAIL field required");
+      <Stack>
+
+    <Alert status='error'>
+    <AlertIcon />
+    There was an error processing your request
+  </Alert>
+
+      </Stack>
+
+
+
     } else if (!email.includes("@")) {
       alert("Please enter valid EMAIL address");
     } else if (name === "") {

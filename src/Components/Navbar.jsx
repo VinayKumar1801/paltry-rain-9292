@@ -2,7 +2,7 @@ import React from 'react'
 import "../Styles/Navbar.css"
 import { Flex,Button,ButtonGroup } from '@chakra-ui/react'
 import DropDown from './DropDown'
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -16,8 +16,18 @@ const Navbar = () => {
                 <Flex minWidth='max-content' alignItems='center' gap='2'>
  
   <ButtonGroup gap='2'>
+    <Link to="/login">
+    
     <Button border={"2px solid #00A37E"} bg="white"  p={"12px  22px"} color="#00A37E" fontSize={13}>Login</Button>
+    </Link>
+    
+    <Link to="/signup">
+    
     <Button bg='#00A37E' p={"12px 27px"} fontSize={13} color="white">START FREE</Button>
+    </Link>
+   
+    
+ 
   </ButtonGroup>
 </Flex></div>
         </div>
