@@ -26,7 +26,7 @@ else{
 const DateGreet = () => {
 const [user,setUser] = useState("");
 useEffect(()=>{
-setUser(getData.name)
+setUser(getData)
 },[])
 
   return (
@@ -34,7 +34,7 @@ setUser(getData.name)
     <div style={{display:"flex",alignItems:"center",gap:"20px",marginBottom:"50px"}}>
         <img src="https://app.hellobonsai.com/packs/static/good-afternoon-b0990cefb6300b05f216.svg" alt="" />
        <p style={{fontSize:"28px",fontWeight:"700"}}>
-         {greeting} , {user.toUpperCase()} !
+         {greeting} 
         
         </p>
         <span  style={{fontSize:"20px",fontWeight:"300"}}>{currDate}  </span> 

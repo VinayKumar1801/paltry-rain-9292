@@ -35,7 +35,7 @@ const history= useNavigate();
 
 useEffect(()=>{
   const userDetails = JSON.parse(localStorage.getItem("user_login"))
- setuserDetail(userDetails.name)
+ setuserDetail(userDetails)
 
 },[])
 const userLogout=()=>{
@@ -60,7 +60,7 @@ const userLogout=()=>{
           <Menu>
             <Flex justifyContent={"right"} gap={3} direction={"row-reverse"}>
               <MenuButton as={Button} bg="#00B289" color={"white"}>
-             { userDetail } <ChevronDownIcon />
+             Profile<ChevronDownIcon />
               </MenuButton>
              
               <Button as={Button} bg="#00B289" color={"white"}>
